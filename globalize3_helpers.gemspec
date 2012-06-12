@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "globalize3_helpers.gemspec",
     "lib/globalize3_helpers.rb",
     "lib/helpers/helper.rb",
     "lib/models/model.rb",
