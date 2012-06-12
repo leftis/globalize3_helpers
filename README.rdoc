@@ -1,6 +1,7 @@
 = globalize3_helpers
 
-Description goes here.
+Helper that renders globalize_translations fields on a per-locale basis, so you can use them separately in the same form and still saving them all at once in the same request.
+Globalize3_helpers gem is just a convertion, of https://github.com/fidel/batch_translations of fidel, from plugin to gem.
 
 == Contributing to globalize3_helpers
  
@@ -11,6 +12,7 @@ Description goes here.
 * Commit and push until you are happy with your contribution.
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+* Write tests now there is none
 
 == Copyright
 
