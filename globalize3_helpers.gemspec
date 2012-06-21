@@ -13,15 +13,12 @@ Gem::Specification.new do |s|
   s.description = "Use globalize3 helpers in your views. Forked from https://github.com/fidel/batch_translations "
   s.email = "lefteris.georgatos@gmail.com"
   s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
-    ".document",
     "Gemfile",
     "Gemfile.lock",
-    "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "globalize3_helpers.gemspec",
