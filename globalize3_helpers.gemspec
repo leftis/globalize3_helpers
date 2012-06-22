@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
     "test/helper.rb",
     "test/test_globalize3_helpers.rb"
   ]
-  s.homepage = "http://github.com/ryudo1987/globalize3_helpers"
+  s.homepage = "http://github.com/leftis/globalize3_helpers"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.19"
