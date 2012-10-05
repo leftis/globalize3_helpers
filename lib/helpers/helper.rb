@@ -4,9 +4,6 @@ module ActionView
 
       def globalize_fields_for_locales(locales = [], *args, &proc)
         raise ArgumentError, "Missing block" unless block_given?
-        globalize_fields_for(locales.first.to_s, *args, &proc) if locales.count <= 1
-        translations_fields = []
-
         locales.each do |locale|
           globalize_fields_for_locale(locale, *args, &proc)
         end
