@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "globalize3_helpers"
-  s.version = "0.2.1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lefteris Georgatos"]
-  s.date = "2012-10-05"
+  s.date = "2012-10-06"
   s.description = "Use globalize3 helpers in your views. Forked from https://github.com/fidel/batch_translations "
   s.email = "lefteris.georgatos@gmail.com"
   s.extra_rdoc_files = [
@@ -24,9 +24,7 @@ Gem::Specification.new do |s|
     "globalize3_helpers.gemspec",
     "lib/globalize3_helpers.rb",
     "lib/helpers/helper.rb",
-    "lib/models/model.rb",
-    "test/helper.rb",
-    "test/test_globalize3_helpers.rb"
+    "lib/models/model.rb"
   ]
   s.homepage = "http://github.com/ryudo1987/globalize3_helpers"
   s.licenses = ["MIT"]
