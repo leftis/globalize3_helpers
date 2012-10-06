@@ -14,12 +14,10 @@ module ActionView::Helpers
         @template.concat @template.fields_for(object_name, object, *args, &proc)
       end
     end
-  
-    alias_method :globalize_fields_for_locale, :globalize_fields_for_locales
-    
+
     def globalize_fields_for_locales(locales = [], *args, &proc)
       locales.each do |locale|
-        super(locale, *args, &proc)
+        globalize_fields_for_locale(locale, *args, &proc)
       end
     end
     
