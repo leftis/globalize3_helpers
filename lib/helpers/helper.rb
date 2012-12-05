@@ -29,17 +29,18 @@ module ActionView::Helpers
       
       ::I18n.available_locales.each do |locale|
         active_class = ::I18n.locale == locale ? "in active" : ""
+        url          = "lang-#{locale}-#{index}"
         linker << self.template.content_tag(:li,
           self.template.content_tag(:a,
             ::I18n.t("translation.#{locale}"),
-            :href => "#lang-#{locale}",
+            :href => "##{url}",
             :"data-toggle" => "tab"
           ),
           class: "#{active_class}",
         )
         fields << self.template.content_tag(:div,
           self.semantic_fields_for(*(args.dup << self.object.translation_for(locale)), &proc),
-          :id => "lang-#{locale}",
+          :id => "#{url}",
           class: "tab-pane fade #{active_class}"
         )
       end
