@@ -9,7 +9,11 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lefteris Georgatos"]
+<<<<<<< HEAD
   s.date = "2012-12-05"
+=======
+  s.date = "2012-11-03"
+>>>>>>> f4ff40aa715b6fd0ede5fca269b6f18ea965072c
   s.description = "Use globalize3 helpers in your views. Forked from https://github.com/fidel/batch_translations "
   s.email = "lefteris.georgatos@gmail.com"
   s.extra_rdoc_files = [
