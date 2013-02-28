@@ -1,8 +1,13 @@
 module ActionView::Helpers
   class FormBuilder
-  
+
+    def locale
+      @@active_locale
+    end
+
     def globalize_fields_for_locale(locale, *args, &proc)
       raise ArgumentError, "Missing block" unless block_given?
+      @@active_locale = locale
       @index = @index ? @index + 1 : 1
       object_name = "#{@object_name}[translations_attributes][#{@index}]"
       object = @object.translations.find_by_locale(locale.to_s) || @object.translations.new(:locale => locale)
@@ -26,7 +31,7 @@ module ActionView::Helpers
       index = options[:child_index] || "#{self.object.class.to_s}-#{self.object.object_id}"
       linker = ActiveSupport::SafeBuffer.new
       fields = ActiveSupport::SafeBuffer.new
-      
+
       ::I18n.available_locales.each do |locale|
         active_class = ::I18n.locale == locale ? "in active" : ""
         url          = "lang-#{locale}-#{index}"
