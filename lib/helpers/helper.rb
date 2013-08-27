@@ -10,7 +10,7 @@ module ActionView::Helpers
       @@active_locale = locale
       @index = @index ? @index + 1 : 1
       object_name = "#{@object_name}[translations_attributes][#{@index}]"
-      object = @object.translations.find_by_locale(locale.to_s) || @object.translations.new(:locale => locale)
+      object = @object.translation_for(locale.to_s, true)
       @template.concat(@template.hidden_field_tag("#{object_name}[id]", object.id)) unless object.new_record?
       @template.concat(@template.hidden_field_tag("#{object_name}[locale]", locale))
       if @template.respond_to? :simple_fields_for
