@@ -20,7 +20,7 @@ Jeweler::Tasks.new do |gem|
   gem.summary = %Q{This is the batch translation plugin for globalize}
   gem.description = %Q{Use globalize helpers in your views. Forked from https://github.com/fidel/batch_translations }
   gem.email = "rui.castro@gmail.com"
-  gem.authors = ["Lefteris Georgatos"]
+  gem.authors = ["Lefteris Georgatos", "Rui Castro"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 

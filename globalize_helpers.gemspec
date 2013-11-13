@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "globalize_helpers"
-  s.version = "0.3.0"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Lefteris Georgatos"]
-  s.date = "2013-03-07"
+  s.authors = ["Lefteris Georgatos", "Rui Castro"]
+  s.date = "2013-11-13"
   s.description = "Use globalize helpers in your views. Forked from https://github.com/fidel/batch_translations "
   s.email = "rui.castro@gmail.com"
   s.extra_rdoc_files = [
