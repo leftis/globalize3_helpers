@@ -7,7 +7,8 @@ Form helpers for globalize3.
 
 ###Installing gem:
 
-   `gem install globalize3_helpers` 
+	When using bundler put this in your Gemfile:
+   `gem 'globalize3_helpers', :git => 'https://github.com/rui-castro/globalize3_helpers.git'` 
 
 ## Using it
 

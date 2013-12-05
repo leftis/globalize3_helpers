@@ -15,12 +15,12 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "globalize3_helpers"
-  gem.homepage = "http://github.com/ryudo1987/globalize3_helpers"
+  gem.homepage = "https://github.com/rui-castro/globalize3_helpers"
   gem.license = "MIT"
   gem.summary = %Q{This is the batch translation plugin for globalize3}
-  gem.description = %Q{Use globalize3 helpers in your views. Forked from https://github.com/fidel/batch_translations }
-  gem.email = "lefteris.georgatos@gmail.com"
-  gem.authors = ["Lefteris Georgatos"]
+  gem.description = %Q{Use globalize3 helpers in your views. Forked from https://github.com/leftis/globalize3_helpers }
+  gem.email = "rui.castro@gmail.com"
+  gem.authors = ["Lefteris Georgatos", "Rui Castro"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 

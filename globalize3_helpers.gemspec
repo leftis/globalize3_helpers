@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = "globalize3_helpers"
-  s.version = "0.3.0"
+  s.version = "0.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Lefteris Georgatos"]
-  s.date = "2013-03-07"
-  s.description = "Use globalize3 helpers in your views. Forked from https://github.com/fidel/batch_translations "
-  s.email = "lefteris.georgatos@gmail.com"
+  s.authors = ["Lefteris Georgatos", "Rui Castro"]
+  s.date = "2013-11-13"
+  s.description = "Use globalize3 helpers in your views. Forked from https://github.com/leftis/globalize3_helpers"
+  s.email = "rui.castro@gmail.com"
   s.extra_rdoc_files = [
     "README.md"
   ]
@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
     "lib/helpers/helper.rb",
     "lib/models/model.rb"
   ]
-  s.homepage = "http://github.com/ryudo1987/globalize3_helpers"
+  s.homepage = "https://github.com/rui-castro/globalize3_helpers"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.25"
@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
-      s.add_runtime_dependency(%q<globalize3>, [">= 0"])
+      s.add_runtime_dependency(%q<globalize>, ["~> 3.0.0"])
       s.add_development_dependency(%q<shoulda>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, [">= 0"])
@@ -45,7 +45,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rcov>, ["= 0.9.11"])
     else
       s.add_dependency(%q<activesupport>, [">= 0"])
-      s.add_dependency(%q<globalize3>, [">= 0"])
+      s.add_dependency(%q<globalize>, ["~> 3.0.0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, [">= 0"])
@@ -54,7 +54,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<activesupport>, [">= 0"])
-    s.add_dependency(%q<globalize3>, [">= 0"])
+    s.add_dependency(%q<globalize>, ["~> 3.0.0"])
     s.add_dependency(%q<shoulda>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, [">= 0"])
