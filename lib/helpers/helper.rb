@@ -8,7 +8,7 @@ module ActionView::Helpers
     def globalize_fields_for_locale(locale, *args, &proc)
       raise ArgumentError, "Missing block" unless block_given?
       @@active_locale = locale
-      @index = @index ? @index + 1 : 1
+      @index = (@index.present? && @index.is_a?(Integer)) ? @index + 1 : 1
       object_name = "#{@object_name}[translations_attributes][#{@index}]"
       object = @object.translation_for(locale.to_s, true)
       @template.concat(@template.hidden_field_tag("#{object_name}[id]", object.id)) unless object.new_record?
